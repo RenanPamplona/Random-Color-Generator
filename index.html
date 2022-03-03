@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Random Color Generator</title>
+   <script src="./src/index.js" defer></script>
+   <script src="./src/ntc.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <span class="title">RANDOM COLOR GENERATOR</span>
+
+
+   <div class="display-container">
+      <div class="display" id="display">
+         <button class="button-generate" onclick="reloadPage()">Generate!</button>
+      </div>
+      <span class="name" id="name"></span>
+
+      <div class="code">
+         <span class="code-title">RGB</span>
+         <span class="code-display" id="rgb" onclick="copyText(this.innerText)"></span>
+      </div>
+
+      <div class="code">
+         <span class="code-title">HEX</span>
+         <span class="code-display" id="hex" onclick="copyText(this.innerText)"></span>
+      </div>
+   </div>
+
+   <span class="tooltip">Tip! Click on the code to copy it!</span>
+
+</body>
+
+</html>
